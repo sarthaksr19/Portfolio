@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="{% static 'images/favicon.png' %}">
+    <title>SARTHAK SINGH-PORTFOLIO</title>
+
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap"
+        rel="stylesheet">
+    <!-- end font -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static  'css/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static  'css/fakeLoader.css' %}">
+    <link rel="stylesheet" href="{% static  'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static  'css/owl.theme.default.css' %}">
+    <link rel="stylesheet" href="{% static  'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static  'css/style.css' %}">
+    <!-- CSS only -->
+
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div class="fakeLoader"></div>
+    <!-- loader -->
+
+    <!-- header -->
+    <header id="home">
+
+        <!-- navbar -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+
+                <!-- navbar brand or logo -->
+                <a href="#" class="navbar-brand">
+                    <h2>SARTHAK SINGH</h2>
+                </a>
+                <!-- end navbar brand or logo -->
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo"
+                    aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbarTogglerDemo" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#resume" class="nav-link">Resume</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="#blog" class="nav-link">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- end navbar -->
+        {% if messages %}
+        {% for message in messages %}
+
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+            <b>{{ message }}</b>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
+        </div>
+
+        {% endfor %}
+
+        {% endif %}
+
+        <!-- home intro -->
+        <div class="home-intro segments">
+            <div class="container">
+                <div class="intro-content box-content">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-sm-12 col-xs-12">
+                            <div class="intro-caption">
+                                <span>I am sarthak Singh</span>
+                                <h2>Python Developer</h2>
+                                <a href="#contact"><button class="button">Contact Me</button></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="intro-image">
+                                <img src="{% static 'images/intro-image.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end home intro -->
+
+    </header>
+    <!-- end header -->
+
+    <!-- about -->
+    <div id="about" class="about segments">
+        <div class="container">
+            <div class="box-content">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="content-left">
+                            <div class="section-title section-title-left">
+                                <h3>About Me</h3>
+                            </div>
+                            <div class="content">
+                                <h2>I am a Python Developer</h2>
+                                <p>My name is Sarthak Singh. I have done my Engineering in Computer Science from Dr.
+                                    A.P.J. Abdul Kalam Technical University, Lucknow. </p>
+                                <p>I am fresher looking for a job that provides the twin benefit of growing as a
+                                    professional by learning and doing self personality growth in the working field.</p>
+                                <p>I build several projects and apps using python in django framework and much more...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="content-right">
+                            <img src="{% static 'images/about.jpg' %}" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+
+    <!-- resume -->
+    <div id="resume" class="resume segments">
+        <div class="container">
+            <div class="box-content">
+                <div class="section-title">
+                    <h3>My Resume</h3>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="content">
+                        <!-- my experience -->
+                        <div class="row ">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="content-left">
+                                    <div class="title-resume">
+                                        <h3>Experience</h3>
+                                        <h2>Currently working as an <span>IT Intern</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="content-right">
+                                    <ul class="timeline">
+                                        <li>
+                                            <h4>IT Internship</h4>
+                                            <span>Python Domain (2021 - current)</span>
+                                        </li>
+                                        <li>
+                                            <h4>Face Detection & Recognition</h4>
+                                            <span>Python | OpenCV Module</span>
+                                        </li>
+                                        <li>
+                                            <h4>User Login Authentication System</h4>
+                                            <span>Python | Django | HTML & CSS</span>
+                                        </li>
+                                        <li>
+                                            <h4>English Dictionary</h4>
+                                            <span>Python | Django | HTML & CSS</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end my experience -->
+                    </div>
+                    <div class="content">
+                        <!-- my education -->
+                        <div class="row ">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="content-left">
+                                    <div class="title-resume">
+                                        <h3>Education</h3>
+                                        <h2>Pursued my bachelor's degree in <span>Computer Science & Engineering</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="content-right">
+                                    <ul class="timeline">
+                                        <li>
+                                            <h4>Dr. A.P.J. Abdul Kalam Technical University</h4>
+                                            <span>Bachelor of Technology</span>
+                                        </li>
+                                        <li>
+                                            <h4>D.A.V. Public School</h4>
+                                            <span>10+2 | Science</span>
+                                        </li>
+                                        <li>
+                                            <h4>D.A.V. Public School</h4>
+                                            <span>10th</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end my education -->
+                    </div>
+                    <div class="content">
+                        <!-- my skill -->
+                        <div class="my-skill">
+                            <div class="row ">
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="content-left">
+                                        <div class="title-resume">
+                                            <h3>Skill</h3>
+                                            <h2>With good <span>Personal</span> and <span>Professional Skills</span>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="content-right">
+                                        <div id="accordionSkill" class="accordion">
+                                            <div class="card">
+                                                <div id="personalSkill" class="card-header">
+                                                    <h2>
+                                                        <button class="btn btn-link" type="button"
+                                                            data-toggle="collapse" data-target="#collapse1"
+                                                            aria-expanded="true" aria-controls="collapse1">
+                                                            <i class="fas fa-circle"></i><span class="hello">Personal Skill</span> 
+                                                        </button>
+                                                    </h2>
+                                                </div>
+
+                                                <div id="collapse1" class="collapse collapse-show"
+                                                    aria-labelledby="personalSkill" data-parent="#accordionSkill">
+                                                    <div class="card-body">
+                                                        <ul class="personalSkill">
+                                                            <li>
+                                                                <div class="skill-title">
+                                                                    <span>Creativity</span>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar" role="progressbar"
+                                                                        aria-valuenow="85" aria-valuemin="0"
+                                                                        aria-valuemax="100" style="width: 75%"></div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="skill-title">
+                                                                    <span>Innovation</span>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar" role="progressbar"
+                                                                        aria-valuenow="80" aria-valuemin="0"
+                                                                        aria-valuemax="100" style="width: 70%"></div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="skill-title">
+                                                                    <span>Communication</span>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar" role="progressbar"
+                                                                        aria-valuenow="90" aria-valuemin="0"
+                                                                        aria-valuemax="100" style="width: 75%"></div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="skill-title">
+                                                                    <span>Teamwork</span>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar" role="progressbar"
+                                                                        aria-valuenow="95" aria-valuemin="0"
+                                                                        aria-valuemax="100" style="width: 70%"></div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card">
+                                                <div id="proSkill" class="card-header">
+                                                    <h2>
+                                                        <button class="btn btn-link collapsed" type="button"
+                                                            data-toggle="collapse" data-target="#collapse2"
+                                                            aria-expanded="false" aria-controls="collapse2">
+                                                            <i class="fas fa-circle"></i><span>Professional Skill</span>
+                                                        </button>
+                                                    </h2>
+                                                </div>
+
+                                                <div id="collapse2" class="collapse" aria-labelledby="proSkill"
+                                                    data-parent="#accordionSkill">
+                                                    <div class="card-body">
+                                                        <ul class="pro-skill">
+                                                            <li>
+                                                                <div class="skill-title">
+                                                                    <span>Python Programming</span>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar" role="progressbar"
+                                                                        aria-valuenow="98" aria-valuemin="0"
+                                                                        aria-valuemax="100" style="width: 75%"></div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="skill-title">
+                                                                    <span>HTML & CSS</span>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar" role="progressbar"
+                                                                        aria-valuenow="90" aria-valuemin="0"
+                                                                        aria-valuemax="100" style="width: 70%"></div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="skill-title">
+                                                                    <span>Django Framework</span>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar" role="progressbar"
+                                                                        aria-valuenow="80" aria-valuemin="0"
+                                                                        aria-valuemax="100" style="width: 70%"></div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="skill-title">
+                                                                    <span>RDBMS</span>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar" role="progressbar"
+                                                                        aria-valuenow="75" aria-valuemin="0"
+                                                                        aria-valuemax="100" style="width: 65%"></div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="skill-title">
+                                                                    <span>Basic JavaScript</span>
+                                                                </div>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar" role="progressbar"
+                                                                        aria-valuenow="70" aria-valuemin="0"
+                                                                        aria-valuemax="100" style="width: 45%"></div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end my skill -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end resume -->
+
+    <!-- Work -->
+    <div id="blog" class="blog segments">
+        <div class="container">
+            <div class="section-title">
+                <h3>My Work</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content">
+                        <div class="image">
+                            <img src="{% static 'images/vlog.jpg' %}" alt="">
+
+                        </div>
+                        <div class="blog-title">
+                            <h4><a href="https://englishdicty.herokuapp.com" target="_blank">Build an English Dictionary
+                                    App in Django</a></h4>
+                            <div class="date">
+                                March 10, 2021 <i class="fas fa-circle"></i><span>PYTHON</span>
+                                <i class="fas fa-circle"></i> <span>DJANGO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content no-mb">
+                        <div class="image">
+                            <img src="{% static 'images/vlogy.jpg' %}" alt="">
+
+                        </div>
+                        <div class="blog-title">
+                            <h4><a href="https://userlogingreet.herokuapp.com" target="_blank">User Login Authentication
+                                    System</a></h4>
+                            <div class="date">
+                                January 31, 2021 <i class="fas fa-circle"></i><span>PYTHON</span>
+                                <i class="fas fa-circle"></i><span>DJANGO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end blog -->
+
+    <!-- contact -->
+    <div id="contact" class="contact segments">
+        <div class="container">
+            <div class="box-content">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="content-left">
+                            <div class="section-title section-title-left">
+                                <h3>Contact Me</h3>
+                            </div>
+                            <h2>Around The Web</h2>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/sinGh.sarThak19" target="_blank"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/sarthastic19" target="_blank"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                
+                                <li>
+                                    <a href="https://www.linkedin.com/in/sarthak-singh-97181a156" target="_blank"><i
+                                            class="fab fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/sarthaksr19/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/sarthaksr19" target="_blank"><i
+                                            class="fab fa-github"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="content-right">
+                            <form method="POST" action="/contact" class="contact-form" id="contact-form">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="first-name-field">
+                                            <input type="text" placeholder="First Name" class="form-control"
+                                                name="first_name">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div id="last-name-field">
+                                            <input type="text" placeholder="Last Name" class="form-control"
+                                                name="last_name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="email-field">
+                                            <input type="email" placeholder="Email Address" class="form-control"
+                                                name="email">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div id="subject-field">
+                                            <input type="text" placeholder="Subject" class="form-control"
+                                                name="subject">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="message-field">
+                                            <textarea cols="30" rows="5" class="form-control" id="form-message"
+                                                name="desc" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="button" type="submit" id="submit" name="submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- footer -->
+    <div class="footer segments">
+        <div class="container">
+            <div class="box-content">
+                <p>&copy SARTHAK SINGH {% now "Y" %}</p>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/fakeLoader.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.filterizr.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>
